@@ -1,0 +1,5 @@
+<!--pages/test/test.wxml-->
+<view>新建test页面</view>
+<text>{{type}}</text>
+<text>{{age}}</text>
+
