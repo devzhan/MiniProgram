@@ -1,5 +1,11 @@
 <!--pages/test/test.wxml-->
-<view>新建test页面</view>
-<text>{{type}}</text>
-<text>{{age}}</text>
+<import src="../tem/template.wxml"/> 
+<view wx:for="{{array}}">
+{{index}}:{{item.message}}
+</view>
+<text>第二行</text>
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+{{idx}}:{{itemName.message}}
+</view>
+<template is="tem"></template>
 

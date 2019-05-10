@@ -7,6 +7,12 @@ Page({
   data: {
       type:1,
       age:23,
+      array:[{
+        message:"foo"
+      },{
+        message:"bar"
+      }
+      ]
   },
 
   /**
@@ -14,7 +20,7 @@ Page({
    */
   onLoad: function (options) {
       this.setData({
-        type:options.type,
+        // type:options.type,
       })
   },
 

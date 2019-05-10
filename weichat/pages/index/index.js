@@ -1,12 +1,17 @@
 //index.js
 //获取应用实例
 var app = getApp()
+var common =require("../../utils/common.js")
 console.log("全局" + app.globalData)
 
 Page({
   data:{
     metto:'hello world',
-    userInfo:{}
+    userInfo:{},
+    id :1,
+    age :20,
+    boolean :false,
+    arr :[1,2,3]
   },
   onLoad:function(){
     console.log("page onLoad")   
@@ -42,15 +47,26 @@ Page({
     console.log(app.globalData.info)
   }, 
   gototest :function(){
-    wx.navigateTo({
-      url: '../test/test?type=2',
-    })
+    wx.redirectTo({
+      url: '../test/test',
+    }),
+    console.log(11)
   },
   gotomenu:function(){
     wx.navigateTo({
-      url: '../menu/menu',
+      url: "../menu/menu"
     })
+    // common.sayHello("owen")
+  },
+  changeBg:function(){
+    var bol = this.data.boolean;
+    console.log("changebg")
+    this.setData({
+      boolean :!bol,
+    })
+
   }
-}
+},
+
 
 )

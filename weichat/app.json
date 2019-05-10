@@ -7,9 +7,27 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ffcc00",
     "navigationBarTitleText": "小程序学习",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "backgroundColor":"#fff000",
+    "list":[
+      {
+      "pagePath":"pages/index/index",
+      "text":"主页"
+    },
+      {
+      "pagePath":"pages/test/test",
+      "text":"测试"
+    },
+      {
+      "pagePath":"pages/menu/menu",
+      "text":"菜单"
+    }
+    ]
+  }
 }

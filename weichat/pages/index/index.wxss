@@ -19,3 +19,16 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.bg_black {
+
+  height: 200rpx;
+  background: lightskyblue;
+
+}
+.bg_red {
+
+  height: 200rpx;
+  background: lightpink;
+
+}
