@@ -11,7 +11,10 @@ Page({
     id :1,
     age :20,
     boolean :false,
-    arr :[1,2,3]
+    arr :[1,2,3],
+    navbar:["首页","搜索","我"],
+    currentTab:0,
+
   },
   onLoad:function(){
     console.log("page onLoad")   
@@ -65,8 +68,18 @@ Page({
       boolean :!bol,
     })
 
+  } ,
+  navbarTap: function (e) {
+
+    this.setData({
+
+
+      currentTab: e.currentTarget.dataset.idx,
+      
+    });
+
   }
 },
-
+ 
 
 )
