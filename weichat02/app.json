@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+ "tabBar": {
+  "backgroundColor": "#fff000",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "主页"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "搜索"
+    }
+  ]
+}
+}
