@@ -9,13 +9,12 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
-		"checkInvalidKey": true
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.6",
+	"libVersion": "2.7.0",
 	"appid": "wx1bf08ab3212b48d7",
-	"projectname": "weichat02",
+	"projectname": "weichat03",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

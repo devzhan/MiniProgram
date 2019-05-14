@@ -19,6 +19,24 @@
 </view>
 
 
+<view wx:for="{{array}}">
+{{index}} is: {{item.message}}
+</view>
+
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="item">
+{{idx}} name {{item.message}}
+</view>
+99乘法表
+<view wx:for="{{arrayNum}}" wx:for-item="i">
+  <view wx:for="{{arrayNum}}" wx:for-item="j">
+    <view wx:if="{{i<=j}}">
+    {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view>
+
+
+
 
 
 <view class="container">

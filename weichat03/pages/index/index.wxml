@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view>循环练习</view>
+<view wx:for="{{array}}" >{{index}} is {{item}}</view>
+for-item和for-index用法
+<view wx:for="{{array}}" for-index="index" for-item="item">
+{{index+1}} is {{item}}
+</view>
+99乘法表
+<view wx:for="{{array}}" wx:for-item="i">
+  <view wx:for="{{array}}" wx:for-item="j">
+    <view wx:if="i<j">
+    {{i}}*{{j}}= {{ i*j }}
+    </view>
+  </view>
+</view>
+
+wx:key 用法
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;">
+  {{item.id}}
+</switch>
+<button bindtap="switch">Switch</button>
+<button bindtap="addToFront">Add to the front</button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;">
+  {{item}}
+</switch>
+<button bindtap="addNumberToFront">Add to the front</button>

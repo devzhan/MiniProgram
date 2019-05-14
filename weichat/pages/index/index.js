@@ -14,6 +14,12 @@ Page({
     arr :[1,2,3],
     navbar:["首页","搜索","我"],
     currentTab:0,
+    array:[{
+      message:"foo"
+    },{
+      message:"bar"
+    }],
+    arrayNum:[1,2,3,4,5,6,7,8,9]
 
   },
   onLoad:function(){
@@ -72,8 +78,6 @@ Page({
   navbarTap: function (e) {
 
     this.setData({
-
-
       currentTab: e.currentTarget.dataset.idx,
       
     });
