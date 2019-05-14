@@ -17,6 +17,7 @@ Page({
       { id: 1, unique: 'unique_1' },
       { id: 0, unique: 'unique_0' },
     ],
+    numberArray: [1, 2, 3, 4]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -76,11 +77,18 @@ Page({
     })
   },
   addToFront(e) {
-    const length = this.data.objectArray.length()
+    const length = this.data.objectArray.length
     this.data.objectArray = [{ id: length, unique: 'unique_' + length }].concat(this.data.objectArray)
     this.setData({
       objectArray: this.data.objectArray
     })
   },
+  addNumberToFront(e) {
+    console.log("addnumbertofront-----",this.data.numberArray)
+    this.data.numberArray = [this.data.numberArray.length + 1].concat(this.data.numberArray)
+    this.setData({
+      numberArray: this.data.numberArray
+    })
+  }
   
 })
