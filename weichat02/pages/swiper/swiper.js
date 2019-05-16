@@ -31,6 +31,8 @@ Page({
     
     var selectedId = e.currentTarget.id
     console.log(this.data.slider[selectedId])
+    var i= e.currentTarget.dataset.id
+    console.log(i)
 
     
   }
