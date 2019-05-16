@@ -2,7 +2,7 @@ var util = require('../../utils/util.js')
 Page({
   data: {
     slider: [],
-    swiperCurrent: 0
+    swiperCurrent: 0,
   },
   onLoad: function () {
     var that = this;
@@ -25,5 +25,13 @@ Page({
     this.setData({
       swiperCurrent: e.currentTarget.id
     })
+  },
+  goToNext: function(e){
+    console.log(e)
+    
+    var selectedId = e.currentTarget.id
+    console.log(this.data.slider[selectedId])
+
+    
   }
 })
