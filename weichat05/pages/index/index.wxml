@@ -1,0 +1,19 @@
+<!--主盒子-->
+<view class="container">
+  <!--左侧栏-->
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}">
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</view>
+    </block>
+  </view>
+  <!--右侧栏-->
+  <view class="nav_right">
+    <view wx:if="{{navRightItems[curNav]}}">
+      <block wx:for="{{navRightItems[curNav].brands}}" wx:for-item="brands" wx:key="id">
+        <view class='nav_right_items'>{{brands}}
+        </view>
+      </block>
+    </view>
+    <view wx:else>暂无数据</view>
+  </view>
+</view>
