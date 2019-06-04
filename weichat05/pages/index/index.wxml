@@ -9,11 +9,14 @@
   <!--右侧栏-->
   <view class="nav_right">
     <view wx:if="{{navRightItems[curNav]}}">
-      <block wx:for="{{navRightItems[curNav].brands}}" wx:for-item="brands" wx:key="id">
-        <view class='nav_right_items'>{{brands}}
+      <block wx:for="{{navRightItems[curNav].brands}}" wx:for-item="items" wx:for-index="index">
+        <view class='nav_right_items' bindtap='chooseCategory' data-index='{{index}}' 
+        data-parent='{{curNav}}'>{{items}}
         </view>
       </block>
     </view>
     <view wx:else>暂无数据</view>
   </view>
 </view>
+
+

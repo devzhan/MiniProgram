@@ -19,7 +19,7 @@ Page({
       { id: 3, parent_id: 3, brands: ["牛肉", '羊肉'] }
       
     ],
-    curNav:1,
+    curNav:0,
     curIndex: 0
 
   },
@@ -27,15 +27,26 @@ Page({
   onLoad: function () {
   },
   switchRightTab: function(e){
-    console.log(e)
-    let id = e.target.dataset.id
-    let index = e.target.dataset.id
-    this.setData({
-      curIndex : index,
-      curNav : id
-    })
-    console.log(id)
-    console.log(index)
+    // console.log(e)
+    // let id = e.target.dataset.id
+    // let index = e.target.dataset.id
+    // this.setData({
+    //   curIndex : index,
+    //   curNav : id
+    // })
+    // console.log(id)
+    // console.log(index)
 
-  }
+  },
+  chooseCategory: function (e) {
+    // console.log(e)
+    // let index = e.target.dataset.index
+    // let parent = e.target.dataset.parent
+    // console.log(parent)
+    // console.log(index)
+    // var category = this.data.navRightItems[index]
+    // console.log(category.brands)
+  
+  
+  },
 })

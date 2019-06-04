@@ -1,7 +1,10 @@
 {
   "pages": [
+    
     "pages/index/index",
+    "pages/shop/shop",
     "pages/logs/logs"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,4 +13,5 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
+  
 }

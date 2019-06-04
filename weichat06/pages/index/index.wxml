@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="menu-wrp">
+  <view class='menu-list'wx:for="{{menu.imgUrls}}">
+    <image class='menu-img' src="{{item}}"></image>
+    <view class='menu-desc'>{{menu.desc[index]}}</view>
+  </view>
+</view>
+<view class="gap-1"></view>

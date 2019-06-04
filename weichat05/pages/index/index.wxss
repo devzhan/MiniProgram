@@ -83,3 +83,14 @@ page{
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.toolbar{
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background-color: rgb(212, 24, 24);
+  color: #939393;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0;
+}
