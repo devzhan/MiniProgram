@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/views/views"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,16 +11,16 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "tabBar":{
-    "background":"#000",
-    "list":[
+  "tabBar": {
+    "background": "#000",
+    "list": [
       {
-      "pagePath":"pages/index/index",
-      "text":"首页"
+        "pagePath": "pages/index/index",
+        "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/views/views",
+        "text": "view"
       }
     ]
   }
