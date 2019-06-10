@@ -1,0 +1,10 @@
+.swiper-container{
+  position: relative;
+}
+.swiper-container .swiper{
+  height: 300rpx;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}

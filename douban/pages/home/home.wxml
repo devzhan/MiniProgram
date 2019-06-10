@@ -1,0 +1,9 @@
+<view class="top-brander" >
+ <view class="swiper-container">
+    <swiper indicator-dots="true" indicator-color="#000" indicator-active-color="#fff" autoplay="true" interval="5000" duration="1000" >
+      <swiper-item wx:for="{{ boards[0].movies }}" wx:key="id">
+        <image src="{{item.images.large}}" class ="img" mode='scaleToFill' bindtap='onImageTap' data-item='{{item}}'/>
+      </swiper-item>
+    </swiper>
+  </view>
+</view> 
